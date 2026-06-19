@@ -227,7 +227,7 @@ cudaAssert(cudaError_t code, const char *call, const char *file, int line);
     return code_56792578;                                      \
   }()
 ///
-#define CAMP_CUDA_API_INVOKE_AND_CHECK(...)                    \
+#define CAMP_CUDA_API_INVOKE_AND_CHECK(func, ...)	       \
   do {                                                         \
     CAMP_CUDA_API_INVOKE_AND_CHECK_IMPLEMENTATION(func, __VA_ARGS__)	\
   } while (false)
